@@ -1,27 +1,26 @@
 <script>
 	import FeaturesIcon from '$lib/icons/features.svelte';
-	import GitHubIcon from '$lib/icons/socials/github.svelte';
+	import GitHubIcon from '$lib/icons/socials/whatsapp.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
 	import Sparkles from '../atoms/Sparkles.svelte';
 </script>
 
 <section id="hero">
-	<h1 class="hello">This is a SvelteKit Static Blog Template!</h1>
+	<h1 class="hello">Lerove Cleaning Services</h1>
 	<p class="intro">
-		<span class="left">It supports Markdown,</span>
-		<span class="right">and is really fast.</span>
+		<span class="left">Sparkling Clean</span>
 	</p>
 	<div class="ctas">
 		<Sparkles>
 			<Button href="https://github.com/matfantinel/sveltekit-static-blog-template">
 				<GitHubIcon slot="icon" />
-				Source Code
+				Whatsapp Us
 			</Button>
 		</Sparkles>
-		<Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
+		<!-- <Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
 			<FeaturesIcon slot="icon" />
 			Components
-		</Button>
+		</Button> -->
 	</div>
 </section>
 
@@ -53,7 +52,7 @@
 			flex-direction: column;
 
 			.left {
-				text-align: left;
+				text-align: center;
 			}
 			.right {
 				text-align: right;

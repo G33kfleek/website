@@ -3,6 +3,7 @@
 	import About from '$lib/components/organisms/About.svelte';
 	import RecentPosts from '$lib/components/organisms/RecentPosts.svelte';
 	import Features from '$lib/components/organisms/Features.svelte';
+	import Carousel from '$lib/components/organisms/Carousel.svelte';
 	import type { Feature, BlogPost } from '$lib/utils/types';
 
 	export let data: {
@@ -15,9 +16,11 @@
 
 <div class="container">
 	<Hero />
+	<Carousel/>
 	<About />
 	{#if posts && posts.length > 0}
 		<RecentPosts {posts} />
 	{/if}
+
 	<Features {features} />
 </div>

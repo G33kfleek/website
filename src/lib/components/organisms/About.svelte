@@ -7,23 +7,21 @@
 <section id="about">
 	<div class="info">
 		<h2>
-			This is a catchy headline that
+			Transform Your Space into
 			<SparklingHighlight color="secondary">sparkles!</SparklingHighlight>
 		</h2>
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit voluptatibus commodi
-			autem provident quam labore, libero beatae praesentium voluptate?
+			Our specialty at Lerove Cleaning Services is transforming your surroundings into a spotless
+			haven. Our unwavering attention to detail and dedication to perfection guarantee that your
+			whole room has a clean, modern appeal.
 		</p>
-		<div class="socials">
+		<!-- <div class="socials">
 			<span>Socials:</span>
 			<Socials />
-		</div>
+		</div> -->
 	</div>
 	<div class="image">
-		<Image
-			src="/images/sample-image.png"
-			alt="Sample for the static template"
-		/>
+		<Image src="/images/cleaning_1.png" alt="Sample for the static template" />
 	</div>
 </section>
 
