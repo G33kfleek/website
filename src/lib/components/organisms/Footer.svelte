@@ -11,21 +11,22 @@
 	</div>
 	<div class="content">
 		<div class="copyright">
-			This template was built by <a
-				href="https://fantinel.dev?utm_source=site-template"
+			We're open @8:00am to 5:00pm <a
+				href="https://time.is/"
 				target="_blank"
-				rel="noopener noreferrer">Matheus Fantinel</a
+				rel="noopener noreferrer">E.A.T</a
 			>.
 		</div>
 		<div class="credits">
-			Powered by <a href="https://kit.svelte.dev/" target="_blank" rel="noopener noreferrer"
-				>SvelteKit</a
-			>. Icons by
-			<a href="https://iconoir.com/" target="_blank" rel="noopener noreferrer">Iconoir</a>.
+			Developed and Designed by <a
+				href="https://geekd.netlify.app/"
+				target="_blank"
+				rel="noopener noreferrer">Geekd</a
+			>
 		</div>
 		<div class="socials">
 			<Socials />
-			<RssLink />
+			<!-- <RssLink /> -->
 			<ThemeToggle />
 		</div>
 	</div>

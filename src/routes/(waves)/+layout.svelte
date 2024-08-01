@@ -2,7 +2,6 @@
 	import Waves from '$lib/components/organisms/Waves.svelte';
 	import Header from '$lib/components/organisms/Header.svelte';
 	import Footer from '$lib/components/organisms/Footer.svelte';
-	import Map from '$lib/components/molecules/Map.svelte';
 	import { description, image, keywords, title, siteBaseUrl } from '$lib/data/meta';
 </script>
 
@@ -31,6 +30,6 @@
 <main>
 	<slot />
 </main>
-<Map />
+
 <Footer />
 

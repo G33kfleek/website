@@ -5,6 +5,8 @@
 	import Features from '$lib/components/organisms/Features.svelte';
 	import Carousel from '$lib/components/organisms/Carousel.svelte';
 	import type { Feature, BlogPost } from '$lib/utils/types';
+	import Team from '$lib/components/organisms/TeamSection.svelte';
+	import Map from '$lib/components/molecules/Map.svelte';
 
 	export let data: {
 		features: Feature[];
@@ -16,11 +18,13 @@
 
 <div class="container">
 	<Hero />
-	<Carousel/>
+	<Carousel />
 	<About />
+	<Team />
+	<Features {features} />
+
 	{#if posts && posts.length > 0}
 		<RecentPosts {posts} />
 	{/if}
-
-	<Features {features} />
+	<Map />
 </div>

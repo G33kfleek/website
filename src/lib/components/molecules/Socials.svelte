@@ -3,49 +3,30 @@
 	import GitHubIcon from '$lib/icons/socials/github.svelte';
 	import LinkedInIcon from '$lib/icons/socials/linkedin.svelte';
 	import EmailIcon from '$lib/icons/socials/email.svelte';
-	import RssIcon from '$lib/icons/rss.svelte';
-	import MastodonIcon from '$lib/icons/socials/mastodon.svelte';
+	import Whatsapp from '$lib/icons/socials/whatsapp.svelte';
+	// import RssIcon from '$lib/icons/rss.svelte';
+	// import MastodonIcon from '$lib/icons/socials/mastodon.svelte';
 </script>
 
 <div class="socials">
-	<a
-		href="#"
-		target="_blank"
-		rel="noopener noreferrer"
-		title="Say Hi on Telegram"
-	>
+	<a href="#" target="_blank" rel="noopener noreferrer" title="Say Hi on Telegram">
 		<TelegramIcon />
 	</a>
 	<a
-		href="#"
+		href="https://api.whatsapp.com/send?phone=254114575156"
 		target="_blank"
 		rel="me noreferrer"
-		title="Say Hi on Mastodon"
+		title="whatsapp us"
 	>
-		<MastodonIcon />
+		<Whatsapp />
 	</a>
-	<a
-		href="#"
-		target="_blank"
-		rel="noopener noreferrer"
-		title="See my GitHub profile"
-	>
+	<!-- <a href="#" target="_blank" rel="noopener noreferrer" title="See my GitHub profile">
 		<GitHubIcon />
-	</a>
-	<a
-		href="#"
-		target="_blank"
-		rel="noopener noreferrer"
-		title="Connect on LinkedIn"
-	>
+	</a> -->
+	<a href="#" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn">
 		<LinkedInIcon />
 	</a>
-	<a
-		href="#"
-		target="_blank"
-		rel="noopener noreferrer"
-		title="Send an email"
-	>
+	<a href="#" target="_blank" rel="noopener noreferrer" title="Send an email">
 		<EmailIcon />
 	</a>
 </div>

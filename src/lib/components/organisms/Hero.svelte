@@ -1,6 +1,6 @@
 <script>
 	import FeaturesIcon from '$lib/icons/features.svelte';
-	import GitHubIcon from '$lib/icons/socials/whatsapp.svelte';
+	import Whatsapp from '$lib/icons/socials/whatsapp.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
 	import Sparkles from '../atoms/Sparkles.svelte';
 </script>
@@ -12,8 +12,8 @@
 	</p>
 	<div class="ctas">
 		<Sparkles>
-			<Button href="https://github.com/matfantinel/sveltekit-static-blog-template">
-				<GitHubIcon slot="icon" />
+			<Button href="https://api.whatsapp.com/send?phone=2540114575156">
+				<Whatsapp slot="icon" />
 				Whatsapp Us
 			</Button>
 		</Sparkles>

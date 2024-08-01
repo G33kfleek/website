@@ -1,5 +1,6 @@
 <script>
 	import { MapLibre, Marker } from 'svelte-maplibre';
+	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
 
 	// Coordinates for your location
 	const latitude = -1.2959493391342332;
@@ -10,17 +11,23 @@
 	const mapStyle = 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json';
 </script>
 
-<MapLibre center={[longitude, latitude]} {zoom} class="map" standardControls style={mapStyle}>
-	<Marker
-		coordinates={[longitude, latitude]}
-		color="#FF0000"
-		popup="We are located at Donholm Savannah Road Opposite KIPS College"
-	/>
-</MapLibre>
-<div class="location-info">
-	<i class="fas fa-map-marker-alt" />
-	We are located at Donholm Savannah Road Opposite KIPS College
-</div>
+<ContentSection
+	id="features"
+	title="Our location"
+	description=" find us Opposite KIPS college in Donholm Nairobi"
+>
+	<MapLibre center={[longitude, latitude]} {zoom} class="map" standardControls style={mapStyle}>
+		<Marker
+			coordinates={[longitude, latitude]}
+			color="#FF0000"
+			popup="We are located at Donholm Savannah Road Opposite KIPS College"
+		/>
+	</MapLibre>
+	<div class="location-info">
+		<i class="fas fa-map-marker-alt" />
+		We are located at Donholm Savannah Road Opposite KIPS College
+	</div>
+</ContentSection>
 
 <style>
 	:global(.map) {
