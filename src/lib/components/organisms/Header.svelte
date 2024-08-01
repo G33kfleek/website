@@ -6,6 +6,10 @@
 	export let showBackground = false;
 </script>
 
+<svelte:head>
+	<title>Lerove Cleaning</title>
+</svelte:head>
+
 <header class:has-background={showBackground}>
 	<nav class="container">
 		<a class="logo" href="/" aria-label="Site logo">

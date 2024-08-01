@@ -16,6 +16,9 @@
 	let { features, posts } = data;
 </script>
 
+<svelte:head>
+	<title>Lerove Cleaning</title>
+</svelte:head>
 <div class="container">
 	<Hero />
 	<Carousel />
