@@ -1,28 +1,26 @@
 <script>
-	import { MapLibre, Marker } from 'svelte-maplibre';
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
 
-	// Coordinates for your location
-	const latitude = -1.2959493391342332;
-	const longitude = 36.898368525330405;
-	const zoom = 17.5; // Zoom level
-
-	// Map style URL (e.g., Carto Positron)
-	const mapStyle = 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json';
+	// Placeholder image paths
+	const mapImage = 'images/map-to-lcs.png';
+	const streetViewImage = 'images/street-view.png';
 </script>
 
 <ContentSection
 	id="features"
 	title="Our location"
-	description=" find us Opposite KIPS college in Donholm Nairobi"
+	description="Find us opposite KIPS College in Donholm, Nairobi"
 >
-	<MapLibre center={[longitude, latitude]} {zoom} class="map" standardControls style={mapStyle}>
-		<Marker
-			coordinates={[longitude, latitude]}
-			color="#FF0000"
-			popup="We are located at Donholm Savannah Road Opposite KIPS College"
-		/>
-	</MapLibre>
+	<!-- Placeholder image for the map -->
+	<div class="image-container">
+		<img src={mapImage} alt="Map view of our location" class="placeholder-image" />
+	</div>
+
+	<!-- Placeholder image for the street view -->
+	<div class="image-container">
+		<img src={streetViewImage} alt="Street view of our location" class="placeholder-image" />
+	</div>
+
 	<div class="location-info">
 		<i class="fas fa-map-marker-alt" />
 		We are located at Donholm Savannah Road Opposite KIPS College
@@ -30,26 +28,34 @@
 </ContentSection>
 
 <style>
-	:global(.map) {
-		height: 500px; /* Set height for the map */
-		width: 100%; /* Ensure the map fills the container's width */
-		border: 1px solid #ccc; /* Optional: Add a border around the map */
-		border-radius: 8px; /* Optional: Add rounded corners */
+	.image-container {
+		margin: 10px 0;
+		text-align: center;
 	}
+
+	.placeholder-image {
+		width: 100%;
+		max-width: 600px; /* Optional: Limit the max width */
+		height: auto; /* Maintain aspect ratio */
+		border: 1px solid #ccc; /* Optional: Border around the image */
+		border-radius: 8px; /* Optional: Rounded corners */
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow */
+	}
+
 	.location-info {
 		margin-top: 10px;
-		margin-left: 10px; /* Space between the map and the location info */
-		font-size: 0.6rem; /* Font size for the location text */
-		color: #333; /* Text color */
-		text-align: center; /* Center align the text */
-		padding: 8px 16px; /* Padding around the text */
-		background-color: rgba(255, 255, 255, 0.9); /* Background color to enhance readability */
-		border-radius: 4px; /* Rounded corners */
-		max-width: 90%; /* Limit the width of the text container */
-		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for better readability */
+		font-size: 0.9rem; /* Adjusted font size */
+		color: #333;
+		text-align: center;
+		padding: 8px 16px;
+		background-color: rgba(255, 255, 255, 0.9);
+		border-radius: 4px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	}
+
 	.location-info i {
-		color: #ff1919; /* Color of the location icon */
-		font-size: 1.2rem; /* Size of the location icon */
+		color: #ff1919;
+		font-size: 1.2rem;
+		margin-right: 8px;
 	}
 </style>
